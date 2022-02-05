@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-em-color:  rgb(98, 55, 55);
+    /* #AC6565 */
+    --main-bg-color: #a8c8aa;
+  }
+
+ body {
+    font-family: 'Monserratt', sans-serif;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    top: 0;
+    background-color: white;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1.2em;
+   
+}
+nav ul {
+    display: flex;
+    align-content: center;
+    list-style-type: none;
+}
+
+nav ul a {
+    color: var(--main-em-color);
+    padding: 0.6rem;
+    margin: 0 0.25em;
+}
+
+nav ul li a:hover {
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    color: #fff;
+}
+
+nav span {
+    width: 20vw;
+}
+
+#search {
+    width: 100%;
+    min-width: 50px;
+    box-sizing: border-box;
+    padding: 0.5rem 1.5rem 0.5rem 35px;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 1px solid var(--main-em-color);
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+#search-box {
+    position: relative;
+}
+
+#search-img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+#search-img > svg {
+    fill:  var(--main-em-color);
+}
+
+#lounari-area {
+    display: flex;
+    height: 30vh;
+    font-family: 'Roboto', serif;
+}
+
+#lounari-area {
+    flex: 4;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lounari-text-white {
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    display: none;
+}
+
+#lounari-text-info {
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+#triangle {
+    width: 0;
+	height: 100%;
+	border-bottom: 30vh solid var(--main-bg-color);
+	border-right: 10vw solid transparent;
+}
+
+#info-text {
+    width: 80vw;
+    padding: 2em 0;
+    text-align: center;
+    /* This way the text wont wrap */
+    font-size: 1.5em;
+}
+
+.restaurant {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.057);
+    border: 1px dashed var(--main-em-color);
+    border-radius: 10px;
+    display: flex;
+}
+
+.res-menu {
+    flex: 7;
+    padding: 0 0 1em 1em;
+    line-height: 120%;
+}
+  footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(131, 105, 105);
+      height: 100px;
+      margin-top: 50px;
+      color: #fefefe;
+  }
